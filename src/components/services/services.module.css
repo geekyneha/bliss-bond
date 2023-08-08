@@ -1,0 +1,7 @@
+.service-container {
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 4rem;
+  justify-content: center;
+  overflow-x: scroll;
+}
