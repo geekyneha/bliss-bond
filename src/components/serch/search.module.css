@@ -1,0 +1,33 @@
+.search {
+  height: fit-content;
+  background-color: #f0f0f0;
+  width: fit-content;
+  border-radius: 45px;
+}
+.rounded {
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 30px;
+}
+.rounded:hover {
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.guest:hover {
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.guest {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 30px;
+}
+.search-button {
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #fe6180;
+  color: #f0f0f0;
+  margin: 0 1rem;
+}
