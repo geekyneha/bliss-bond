@@ -7,7 +7,7 @@ const Services = () => {
     <>
       <div className={style["service-container"]}>
         {services.map((service, id) => (
-          <div key={service.id}>
+          <div key={service.id} className={style["service"]}>
             <service.icon size={25} fill="gray" />
             <p>{service.label}</p>
           </div>
