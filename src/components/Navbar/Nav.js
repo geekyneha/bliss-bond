@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./navbar.module.css";
+import Search from "../serch/Search";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Nav = () => {
   return (
@@ -17,9 +19,13 @@ const Nav = () => {
             <figcaption>Bliss Bond</figcaption>
           </div>
 
-          <div>serch</div>
+          <div>
+            <Search />
+          </div>
 
-          <div>account</div>
+          <div className={style["account"]}>
+            <BsFillPersonLinesFill size={25} />
+          </div>
         </div>
       </nav>
     </>
