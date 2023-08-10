@@ -16,7 +16,7 @@ const Nav = () => {
               height={50}
               className={style.logo}
             />
-            <figcaption>Bliss Bond</figcaption>
+            <figcaption className={style["brand-name"]}>Bliss Bond</figcaption>
           </div>
 
           <div>
