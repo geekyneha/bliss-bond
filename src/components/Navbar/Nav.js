@@ -2,6 +2,7 @@ import React from "react";
 import style from "./navbar.module.css";
 import Search from "../serch/Search";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiTwotoneSnippets } from "react-icons/ai";
 
 const Nav = () => {
   return (
@@ -21,6 +22,10 @@ const Nav = () => {
 
           <div>
             <Search />
+          </div>
+
+          <div className={style["booking"]}>
+            <AiTwotoneSnippets size={25} fill="#FE6180" />
           </div>
 
           <div className={style["account"]}>
