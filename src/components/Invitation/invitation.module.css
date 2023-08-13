@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.image {
+  border-radius: 14px;
+}
