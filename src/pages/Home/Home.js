@@ -1,14 +1,12 @@
 import React from "react";
-import Nav from "../../components/Navbar/Nav";
-import Services from "../../components/services/Services";
+
 import style from "./home.module.css";
+import Wedding from "../../components/Decoration/Decoration";
+import { Invitation } from "../../components/Invitation/Invitation";
 
 export const Home = () => {
   return (
     <div className={style.main}>
-      <Nav />
-      <Services />
-
       <div className={style["hero"]}>
         <div className={style.content}>
           <h1 className={style["tagline"]}>
@@ -23,6 +21,8 @@ export const Home = () => {
           />
         </div>
       </div>
+
+      <Invitation />
     </div>
   );
 };
