@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 .main {
   width: 100vw;
 }
@@ -9,12 +9,17 @@
 .content {
   width: 50vw;
 }
-.tagline {
-  color: #df9783;
-  font-family: "Caveat", cursive;
-  font-size: 4rem;
+.heading{
+  color: #FE6180;
+  font-family: 'Carter One', cursive;
+  font-size: 3rem;
   text-align: center;
-  padding: 3rem;
+  padding: 0 3rem;
+}
+.tagline{
+  text-align: center;
+  font-size: 1.2rem;
+  padding:0  3rem;
 }
 .hero-image {
   width: 50vw;
