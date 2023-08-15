@@ -3,16 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import Decoration from "./components/Decoration/Decoration";
 import { Invitation } from "./components/Invitation/Invitation";
 import Professional from "./components/Event-professinals/Professional";
+import HotelDestination from "./components/Hotels-destination/HotelDestination";
+import Menu from "./components/Catering/Menu";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/invitation",
         element: <Invitation endpoint={"/invitation"} />,
+      },
+      {
+        path: "/catering",
+        element: <Menu endpoint={"/catering"} />,
+      },
+      {
+        path: "/stay",
+        element: <HotelDestination endpoint={"/destination"} />,
       },
       {
         path: "/videoGrapher",
