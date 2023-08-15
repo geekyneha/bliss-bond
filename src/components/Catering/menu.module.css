@@ -1,0 +1,12 @@
+.menu {
+  width: 50%;
+  margin: auto;
+  border-radius: 14px;
+}
+.accordion {
+  margin: 1rem;
+}
+.all-items {
+  display: flex;
+  justify-content: space-around;
+}
