@@ -1,16 +1,15 @@
-import React from 'react'
-import useFetchData from '../../hooks/useFetchData'
-import style from './hotel-destination.module.css'
+import React from "react";
+import useFetchData from "../../hooks/useFetchData";
+import style from "./hotel-destination.module.css";
 import { BsStarFill } from "react-icons/bs";
 
-const HotelDestination = ({endpoint}) => {
-    const info = useFetchData(endpoint);
-    // console.log(info[0].hotels[0].imageUrl);
+const HotelDestination = ({ endpoint }) => {
+  const info = useFetchData(endpoint);
+  // console.log(info[0].hotels[0].imageUrl);
 
-    // const hotelInfo = info[0].hotels;
-    // console.log(hotelInfo)
+  // const hotelInfo = info[0].hotels;
+  // console.log(hotelInfo)
 
-    
   return (
     <div className={style["container"]}>
       {info[0]?.hotels?.map((data, index) => (
@@ -34,7 +33,7 @@ const HotelDestination = ({endpoint}) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default HotelDestination
+export default HotelDestination;
