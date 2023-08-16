@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: fit-content;
+}
+
+.venue-image {
+  width: 300px;
+  height: 300px;
+  padding: 1rem;
+
+  border-radius: 24px;
+}
+
+.venue-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.venue-detail > span {
+  padding: 0 1rem;
+}
+.cost {
+  padding: 0.2rem 1rem;
+}
+.rating {
+  background-color: #fe6180;
+  padding: 0.2rem 0;
+  margin-right: 1rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+}
+.star {
+  margin: 0 0.5rem;
+}
+.rate {
+  margin: 0 0.5rem;
+}
