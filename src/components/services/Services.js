@@ -8,8 +8,8 @@ const Services = () => {
     <>
       <div className={style["service-container"]}>
         {services.map((service) => (
-          <Link to={service.path} className={style["link"]}>
-            <div key={service.id} className={style["service"]}>
+          <Link to={service.path} className={style["link"]} key={service.id}>
+            <div className={style["service"]}>
               <service.icon size={25} fill="gray" />
               <div>{service.label}</div>
             </div>

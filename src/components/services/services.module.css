@@ -16,3 +16,11 @@
 .service-container::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 1000px) {
+  .service-container {
+    width: 80vw;
+    gap: 2rem;
+    font-size: small;
+  }
+}
