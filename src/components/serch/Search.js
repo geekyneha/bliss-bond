@@ -13,9 +13,9 @@ const Search = () => {
       />
       <button className={style["rounded"]}>Check in date</button>
       <button className={style["rounded"]}>Check out date</button>
-      <button className={style["guest"]}>
+      <span className={style["guest"]}>
         Add guests <button className={style["search-button"]}>Serch</button>
-      </button>
+      </span>
     </div>
   );
 };
