@@ -10,6 +10,8 @@ import { Invitation } from "./components/Invitation/Invitation";
 import Professional from "./components/Event-professinals/Professional";
 import HotelDestination from "./components/Hotels-destination/HotelDestination";
 import Menu from "./components/Catering/Menu";
+import Transportation from "./components/Transportation/Transportation";
+import Venue from "./components/Venue/Venue";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: "/stay",
         element: <HotelDestination endpoint={"/destination"} />,
+      },
+      {
+        path: "/transportation",
+        element: <Transportation endpoint={"/transportation"} />,
+      },
+      {
+        path: "/venues",
+        element: <Venue endpoint={"/destination"} />,
       },
       {
         path: "/videoGrapher",
