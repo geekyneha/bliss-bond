@@ -2,7 +2,8 @@
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
 
   padding: 1rem 2rem;
   width: 95vw;
@@ -27,6 +28,12 @@
 
 .booking {
   padding: 1rem;
+}
+.right-options {
+  display: flex;
+}
+.link {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
