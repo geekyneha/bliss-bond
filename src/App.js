@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import { Home } from "./pages/Home/Home";
 import Nav from "../src/components/Navbar/Nav";
 import Services from "../src/components/services/Services";
+import Footer from "../src/components/Footer/Footer";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Nav />
       <Services />
       <Outlet />
+      <Footer />
     </>
   );
 }
