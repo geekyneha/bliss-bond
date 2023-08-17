@@ -12,6 +12,7 @@ import HotelDestination from "./components/Hotels-destination/HotelDestination";
 import Menu from "./components/Catering/Menu";
 import Transportation from "./components/Transportation/Transportation";
 import Venue from "./components/Venue/Venue";
+import Login from "./pages/Login/Login";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+
       {
         path: "/weddingDecoration",
         element: <Decoration endpoint={"/weddingDecoration"} />,
@@ -68,6 +70,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "/login", element: <Login /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
