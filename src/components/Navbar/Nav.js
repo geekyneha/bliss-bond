@@ -34,7 +34,9 @@ const Nav = () => {
             </div>
 
             <div className={style["account"]}>
-              <BsFillPersonLinesFill size={25} />
+              <Link to="/login">
+                <BsFillPersonLinesFill size={25} />
+              </Link>
             </div>
           </div>
         </div>
