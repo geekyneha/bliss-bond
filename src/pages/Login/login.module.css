@@ -24,6 +24,7 @@
 }
 .input {
   width: 100%;
+  
 }
 .button {
   width: 100%;
@@ -43,4 +44,18 @@
 .or-text {
   margin: 0 10px;
   color: #777;
+}
+.pink{
+  color: #fe6180;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.margin{
+  margin: 1rem 0;
+}
+.user{
+  display: flex;
+  margin: 1rem 0;
+  justify-content: center;
+  align-items: center;
 }
