@@ -1,21 +1,15 @@
-// import React, { useState } from "react";
-// import style from "./login.module.css";
-// import { TextField } from "@mui/material";
-// import { Button } from "@mui/material";
-// import { Box } from "@mui/material";
-// import { createTheme } from "@mui/material/styles";
-// import { useFormik } from "formik";
-
-
-
 import React from "react";
 import style from "./login.module.css";
 import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 import { Box } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
-import { Formik, Form, ErrorMessage } from "formik";
+import { Formik, Form } from "formik";
 import { validationSchema } from "../../schema";
+import Axios  from "axios";
+import {  ToastContainer,toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -34,21 +28,65 @@ const theme = createTheme({
 
 
 const Login = () => {
-  const [isSignUp, setIsSignUp] = React.useState(false);
+  // const [isSignUp, setIsSignUp] = React.useState(false);
   const [isLogin, setIsLogin] = React.useState(false);
+  const navigate=useNavigate();
 
   const showLogin = () => {
-    setIsLogin(true);
+    setIsLogin(!isLogin);
     console.log(isLogin);
   };
 
-  const handleFormSubmit = (values) => {
-    // Handle form submission
-    console.log("Form submitted with values:", values);
+  const getUsers= async ()=>{
+
+    try{
+      const response= await Axios.get("https://mockdata-1hd6.onrender.com/user")
+      return response.data
+    }
+    catch(error){
+      throw error
+    }
+
+  }
+
+  const handleFormSubmit = async (values) => {
+    const users = await getUsers();
+    const userExists = users.some((user) => user.email.trim().toLowerCase() === values.email.trim().toLowerCase());
+  
+    if (!userExists ) {
+      try {
+        // Perform the POST request to add the new user.
+        const response = await Axios.post("https://mockdata-1hd6.onrender.com/user", {
+          email: values.email,
+          password: values.password,
+        });
+  
+        if (response.status === 201) {
+          console.log("Form submitted with values:", values);
+          toast.success('Form submitted successfully');
+          navigate("/")
+
+        } else {
+          toast.error("User creation failed.");
+          // Handle failure (e.g., show an error message).
+        }
+      } catch (error) {
+        console.error("An error occurred while adding a new user:", error);
+        toast.error('An error occurred while adding a new user');
+        // Handle the error accordingly.
+      }
+    } else {
+      toast.warn("User already exists");
+   
+      
+      // Handle the case where the user already exists (e.g., show an error message).
+    }
   };
+  
 
   return (
     <div className={style["outer-continer"]}>
+      <ToastContainer />
       <div className={style["login-continer"]}>
         {isLogin ? <h1>Welcome Back</h1> : <h1>Create Your Account</h1>}
         <Formik
@@ -97,12 +135,12 @@ const Login = () => {
                   Continue
                 </Button>
               </Box>
-              <p>
-                Don't have an Account?{" "}
-                <span onClick={showLogin} className={style["pink"]}>
-                  Login
-                </span>
-              </p>
+             <div className={style["user"]}> <p>
+                Don't have an Account?</p>
+                <div onClick={showLogin} className={style["pink"]}>
+                  {isLogin? <span>sign up</span>: <span>Log in</span>}
+                </div>
+              </div>
               <div className={style["divider-container"]}>
                 <hr className={style["divider"]} />
                 <span className={style["or-text"]}>Or</span>
