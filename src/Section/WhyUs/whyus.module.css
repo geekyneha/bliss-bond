@@ -1,0 +1,48 @@
+.section-whyus {
+  width: 80vw;
+  min-height: 100vh;
+}
+.why-us {
+  display: flex;
+}
+.feature {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fe6180;
+}
+.why-us-image {
+  width: 800px;
+}
+.icon {
+  padding: 0.5rem 0;
+}
+.why {
+  max-width: 350px;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+}
+.why-us-heading {
+  font-size: 2.5rem;
+  color: #707fc4;
+}
+
+@media screen and (max-width: 1024px) {
+  .why-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .why-us-image {
+    width: 400px;
+  }
+  .feature {
+    font-size: 1.1rem;
+  }
+  .why {
+    font-size: 1rem;
+  }
+}
