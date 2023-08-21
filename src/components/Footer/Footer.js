@@ -12,44 +12,47 @@ const Footer = () => {
     <footer className={style["footer"]}>
       <div className={style["more-service"]}>
         <div>
-          <p>Support</p>
+          <h4>{"Support".toUpperCase()}</h4>
+          <p>Register my business</p>
           <p>Help center</p>
           <p>Cancellation option</p>
           <p>Contact us</p>
         </div>
         <div>
-          <p>Support</p>
-          <p>Help center</p>
-          <p>Cancellation option</p>
-          <p>Contact us</p>
+          <h4>{"information".toUpperCase()}</h4>
+          <p>About us</p>
+          <p>Terms and Privacy </p>
+          <p>Careers</p>
+          <p>Our Team</p>
         </div>
         <div>
-          <p>Support</p>
-          <p>Help center</p>
-          <p>Cancellation option</p>
-          <p>Contact us</p>
+          <h4>{"Resources".toUpperCase()}</h4>
+          <p>Blogs</p>
+          <p>FAQ's</p>
+          <p>Testimonials</p>
+          <p>Write a feedback</p>
         </div>
       </div>
       <div className={style["fotter-bottom"]}>
         <div className={style["company"]}>
           <div> ©2023 blissbond ,inc</div>
-          <Link>. Terms</Link>
-          <Link>. Privacy</Link>
-          <Link>. company detail </Link>
+          <Link className={style["link"]}>. Terms</Link>
+          <Link className={style["link"]}>. Privacy</Link>
+          <Link className={style["link"]}>. company detail </Link>
         </div>
 
         <div className={style["more-detail"]}>
           <div>ENG(IN)</div>
           <div> ₹ INR</div>
           <div className={style["cta"]}>
-            <Link>
-              <AiFillFacebook size={25} fill="gray" />
+            <Link className={style["link"]}>
+              <AiFillFacebook size={25} fill="white" />
             </Link>
-            <Link>
-              <AiFillTwitterSquare size={25} fill="gray" />
+            <Link className={style["link"]}>
+              <AiFillTwitterSquare size={25} fill="white" />
             </Link>
-            <Link>
-              <AiFillInstagram size={25} fill="gray" />
+            <Link className={style["link"]}>
+              <AiFillInstagram size={25} fill="white" />
             </Link>
           </div>
         </div>
