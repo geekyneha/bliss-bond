@@ -1,6 +1,6 @@
 .service-container {
   display: flex;
-  padding: 1rem;
+
   width: 70vw;
   gap: 4rem;
   margin: auto;
@@ -8,6 +8,7 @@
 }
 .service {
   text-align: center;
+  margin: 1rem 0;
 }
 .link {
   text-decoration: none;
@@ -19,7 +20,7 @@
 
 @media screen and (max-width: 1000px) {
   .service-container {
-    width: 80vw;
+    width: 60vw;
     gap: 2rem;
     font-size: small;
   }
