@@ -10,7 +10,7 @@ const Services = () => {
         {services.map((service) => (
           <Link to={service.path} className={style["link"]} key={service.id}>
             <div className={style["service"]}>
-              <service.icon size={25} fill="gray" />
+              <service.icon size={25}  className={style["icon"]} />
               <div>{service.label}</div>
             </div>
           </Link>

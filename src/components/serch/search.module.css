@@ -8,14 +8,21 @@
   padding: 1.5rem 2rem;
   border: none;
   border-radius: 30px;
+  background-color: #f0f0f0;
 }
+
 .rounded:hover {
   border: 1px solid grey;
   cursor: pointer;
 }
+.guest{
+  font-size: 1rem;
+}
 .guest:hover {
   border: 1px solid grey;
   cursor: pointer;
+ 
+  
 }
 
 .guest {

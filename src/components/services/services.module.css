@@ -1,6 +1,5 @@
 .service-container {
   display: flex;
-
   width: 70vw;
   gap: 4rem;
   margin: auto;
@@ -9,6 +8,12 @@
 .service {
   text-align: center;
   margin: 1rem 0;
+  color: gray;
+}
+
+.service:hover{
+  color: #FE6180;
+  
 }
 .link {
   text-decoration: none;
