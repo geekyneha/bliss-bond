@@ -1,0 +1,21 @@
+.page-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.page-no {
+  padding: 0.8rem 1rem;
+  border: 2px solid #fe6180;
+  border-radius: 12px;
+  background: #fff;
+  color: #fe6180;
+
+  font-size: 1.1rem;
+}
+.active {
+  background-color: #fe6180;
+  color: #fff;
+}
