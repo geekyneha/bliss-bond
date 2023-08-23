@@ -2,21 +2,18 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 .testimonial {
   display: flex;
-
   gap: 3rem;
   overflow-x: scroll;
-
-  width: 85vw;
+  width: 60vw;
 }
-.testimonial::-webkit-scrollbar{
-    display: none;
+.testimonial::-webkit-scrollbar {
+  display: none;
 }
 .card {
   min-width: 300px;
@@ -26,32 +23,44 @@
   justify-content: space-between;
   border-radius: 14px;
   font-size: 1.2rem;
-  background-color: #FFCCBE;
-  color: #FE6180;
+  background-color: #ffccbe;
+  color: #fe6180;
 }
-.user{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    color: #000;
-}
-.user-image{
-    border-radius: 50%;
-}
-.feedback-message{
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 14px;
-   
-    font-style: italic;
 
+.user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #000;
 }
-@media screen and (max-width:480px){
-    .card{
-        font-size: 1rem;
-        padding: 0.5rem;
-        width: 200px;
-     
-    }
-    
+.user-image {
+  border-radius: 50%;
+}
+.feedback-message {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 14px;
+
+  font-style: italic;
+}
+.scroll-left,
+.scroll-right {
+  color: #fe6180;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 2rem;
+}
+.scroll-left:hover,
+.scroll-right:hover {
+  cursor: pointer;
+  background-color: #fe6180;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .card {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 200px;
+  }
 }
