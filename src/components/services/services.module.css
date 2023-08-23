@@ -11,10 +11,10 @@
   color: gray;
 }
 
-.service:hover{
-  color: #FE6180;
-  
+.service:hover {
+  color: #fe6180;
 }
+
 .link {
   text-decoration: none;
   color: black;
