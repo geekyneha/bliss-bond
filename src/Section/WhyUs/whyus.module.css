@@ -46,3 +46,8 @@
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .why {
+    margin-left: 0;
+  }
+}

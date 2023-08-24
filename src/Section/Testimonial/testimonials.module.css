@@ -31,7 +31,9 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  color: #000;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .user-image {
   border-radius: 50%;
@@ -62,5 +64,22 @@
     font-size: 1rem;
     padding: 0.5rem;
     width: 200px;
+    gap: 0;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0.8rem;
+  }
+  .testimonial {
+    width: 100vw;
+  }
+  .scroll-left,
+  .scroll-right {
+    display: none;
+  }
+  .card {
+    min-width: 90%;
   }
 }

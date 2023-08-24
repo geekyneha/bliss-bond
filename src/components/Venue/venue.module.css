@@ -42,3 +42,12 @@
 .rate {
   margin: 0 0.5rem;
 }
+@media screen and (max-width: 480px) {
+  .venue-image {
+    width: 80vw;
+    height: 200px;
+  }
+  .rate {
+    font-size: 14px;
+  }
+}
