@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useFetchData from "../../hooks/useFetchData";
 import style from "./invitation.module.css";
 import Pagination from "../Pagination/Pagination";
+import InvitationShimmer from "./InvitationShimmer";
 
 export const Invitation = ({ endpoint }) => {
   const info = useFetchData(endpoint);
@@ -17,16 +18,20 @@ export const Invitation = ({ endpoint }) => {
   return (
     <>
       <div className={style.container}>
-        {currentPosts.map((data, index) => (
-          <div key={index}>
-            <img
-              src={data.imageUrl}
-              alt="invtation"
-              width={150}
-              className={style.image}
-            />
-          </div>
-        ))}
+        {info.length === 0
+          ? Array(16)
+              .fill()
+              .map((_, index) => <InvitationShimmer key={index} />)
+          : currentPosts.map((data, index) => (
+              <div key={index}>
+                <img
+                  src={data.imageUrl}
+                  alt="invtation"
+                  width={150}
+                  className={style.image}
+                />
+              </div>
+            ))}
       </div>
 
       <Pagination

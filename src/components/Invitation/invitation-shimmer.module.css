@@ -2,10 +2,12 @@
   display: flex;
   width: 80vw;
   margin: auto;
-  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
-.image {
+.image-shimmer {
   border-radius: 14px;
+  width: 150px;
+  height: 200px;
+  background-color: #f0f0f0;
 }
