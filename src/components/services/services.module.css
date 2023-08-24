@@ -30,3 +30,13 @@
     font-size: small;
   }
 }
+@media screen and (max-width: 480px) {
+  .service-container {
+    width: 100vw;
+    gap: 1rem;
+    font-size: small;
+  }
+  .service {
+    margin: 1rem 0.8rem;
+  }
+}
