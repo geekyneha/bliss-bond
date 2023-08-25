@@ -27,7 +27,7 @@ export const Home = () => {
 
         <div className={style.image}>
           <img
-            src="https://fiverr-res.cloudinary.com/t_main1,q_auto,f_auto/gigs/298357744/original/e84c601e5ee30f9eb5e972911ea8dacec220911d.jpg"
+            src="https://img.freepik.com/premium-photo/young-married-couple-posing-having-sniff-bouquet_13339-292922.jpg?w=1060"
             alt="wedding-organizing"
             className={style["hero-image"]}
           />

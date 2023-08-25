@@ -12,13 +12,13 @@ const Nav = () => {
         <div className={style.container}>
           <Link to={"/"} className={style["link"]}>
             <div>
-              <img
+              {/* <img
                 src="https://cdn.dribbble.com/users/1985786/screenshots/5363979/gif.gif"
                 alt="bliss-bond"
                 width={50}
                 height={50}
                 className={style.logo}
-              />
+              /> */}
               <figcaption className={style["brand-name"]}>
                 Bliss Bond
               </figcaption>
@@ -29,12 +29,12 @@ const Nav = () => {
             <Search />
           </div>
           <div className={style["right-options"]}>
-            <div className={style["booking"]}>
+            <div className={style["booking"]} >
               <AiTwotoneSnippets size={25} fill="#FE6180" />
             </div>
 
-            <div className={style["account"]}>
-              <Link to="/login">
+            <div className={style["account"]} >
+              <Link to="/login" className={style["account-logo"]}>
                 <BsFillPersonLinesFill size={25} />
               </Link>
             </div>

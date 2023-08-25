@@ -23,7 +23,7 @@
   justify-content: space-between;
   border-radius: 14px;
   font-size: 1.2rem;
-  background-color: #ffccbe;
+  background-color: #FE6180;
   color: #fe6180;
 }
 
@@ -69,6 +69,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .section{
+    height: fit-content;
+  }
   .container {
     margin: 0.8rem;
   }
