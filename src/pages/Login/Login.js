@@ -87,7 +87,7 @@ const Login = () => {
   return (
     <div className={style["outer-continer"]}>
       <ToastContainer />
-      <div className={style["login-continer"]}>
+      <div className={style["login-container"]}>
         {isLogin ? <h1>Welcome Back</h1> : <h1>Create Your Account</h1>}
         <Formik
           initialValues={{ email: "" , password:""}}

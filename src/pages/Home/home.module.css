@@ -82,7 +82,7 @@ text-align: left;
 
 @media screen and (max-width: 480px) {
   .hero-image {
-    width: 80vw;
+    width: 100vw;
     height: 70vh;
    
   }
