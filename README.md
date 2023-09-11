@@ -67,5 +67,5 @@ Start the server
 
 ## Collabrators
 
-- [@geekyneha](https://github.com/shubham-tiwari171/kanban-project.git)
+- [@geekyneha](https://github.com/geekyneha/bliss-bond.git)
 
