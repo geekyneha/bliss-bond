@@ -1,4 +1,4 @@
-# Bliss Bond
+# Bliss Bond 💍💗
 
 ## Table of Contents
 
